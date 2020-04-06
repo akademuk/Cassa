@@ -415,6 +415,14 @@ sup {
   }
 }
 
+@media (max-width: 568px) {
+  .input-value:hover + .input-array {
+    -webkit-transform: translatex(0);
+    transform: translatex(0);
+    opacity: 1;
+  }
+}
+
 @media (max-width: 576px) {
   .mobile-wrapper {
     display: block;
@@ -454,6 +462,7 @@ sup {
   }
   .mobile-wrapper .btn {
     margin-right: 5px;
+    background-size: 50%;
   }
   .mobile-wrapper .input-value {
     left: 15%;
