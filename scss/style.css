@@ -103,7 +103,7 @@ h2 {
 
 .carousel-items:after {
   content: "";
-  background: url(../../img/doska2.png);
+  background: url(../img/doska2.png);
   width: 100%;
   height: 21px;
   position: absolute;
