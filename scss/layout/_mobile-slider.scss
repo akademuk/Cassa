@@ -1,0 +1,152 @@
+@media (max-width: 768px) {
+  .mobile-wrapper {
+    display: block;
+    margin: 0 auto;
+    height: 100%;
+    width: 240px;
+    position: relative;
+    img {
+      max-width: 62%;
+      margin-left: 13px;
+    }
+    .discount {
+      font-size: 1.4rem;
+      margin-top: 12px;
+      margin-bottom: 3px;
+      letter-spacing: 0.6px;
+      word-spacing: normal;
+    }
+    .input-wrapper {
+      justify-content: flex-end;
+    }
+    .price {
+      font-size: 3.3rem;
+      margin-bottom: 8px;
+    }
+    sup {
+      font-size: 1.3rem;
+    }
+    .container-info {
+      margin-right: 20px;
+    }
+    .btn {
+      margin-right: 5px;
+    }
+    .input-value {
+      left: 15%;
+      top: 12px;
+    }
+    .icon {
+      right: 60%;
+    }
+    &::after {
+      content: "";
+      background: url(../../img/doska2.png);
+      width: 104%;
+      height: 21px;
+      position: absolute;
+      top: 32%;
+      left: -2%;
+      right: 0;
+      display: block;
+    }
+  }
+  .carousel-selector {
+    display: block;
+  }
+  .carousel-items,
+  .carousel-labels {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    display: block;
+  }
+  .carousel-item {
+    width: 240px;
+    display: block;
+    float: left;
+  }
+
+  .carousel-wrapper {
+    width: 100%;
+    height: 100%;
+    padding-top: 5%;
+    background-position: center;
+    position: relative;
+    overflow: hidden;
+  }
+  .carousel-items {
+    min-width: max-content !important;
+    width: 400%;
+    height: 100%;
+    position: absolute;
+    display: flex;
+    left: 0;
+    top: 94px;
+    z-index: 1;
+    transition: left 0.5s ease-out;
+    -o-transition: left 0.5s ease-out;
+    -ms-transition: left 0.5s ease-out;
+    -moz-transition: left 0.5s ease-out;
+    -webkit-transition: left 0.5s ease-out;
+    &::after {
+      display: none;
+    }
+  }
+  .carousel-item {
+    width: 100vw;
+    height: 100%;
+    color: white;
+  }
+
+  .carousel-labels {
+    position: absolute;
+    z-index: 2;
+    left: 0;
+    bottom: 26%;
+    height: 20px;
+    width: 100%;
+    padding: 10px 0;
+    text-align: center;
+    background: transparent;
+  }
+  .carousel-selector {
+    display: none;
+  }
+  .carousel-label {
+    display: inline-block;
+  }
+  .carousel-label label {
+    width: 17px;
+    height: 10px;
+    border-radius: 15px;
+    border: 3px solid #fff;
+    display: block;
+    cursor: pointer;
+  }
+
+  #slide1:checked ~ .carousel-items {
+    left: 0;
+  }
+  #slide1:checked ~ .carousel-labels .carousel-label:nth-child(1) label {
+    background-color: white;
+  }
+  #slide2:checked ~ .carousel-items {
+    left: -100%;
+  }
+  #slide2:checked ~ .carousel-labels .carousel-label:nth-child(2) label {
+    background-color: white;
+  }
+  #slide3:checked ~ .carousel-items {
+    left: -200%;
+  }
+  #slide3:checked ~ .carousel-labels .carousel-label:nth-child(3) label {
+    background-color: white;
+  }
+  #slide4:checked ~ .carousel-items {
+    left: -300%;
+  }
+  #slide4:checked ~ .carousel-labels .carousel-label:nth-child(4) label {
+    background-color: white;
+  }
+}

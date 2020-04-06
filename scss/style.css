@@ -1,0 +1,539 @@
+@font-face {
+  font-family: "BebasNeueRegular";
+  src: url(../../fonts/BebasNeue\Regular.ttf) format("true-type"), url(../../fonts/BebasNeue\Regular.otf);
+  font-weight: 400;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "BebasNeueThin";
+  src: url(../../fonts/BebasNeue\Thin.ttf) format("true-type"), url(../../fonts/BebasNeueThin.otf);
+  font-weight: 100;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "BebasNeueLight";
+  src: url(../../fonts/BebasNeue\Light.ttf) format("true-type"), url(../../fonts/BebasNeue\Light.otf);
+  font-weight: 300;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "Evogria";
+  src: url(../../fonts/Evogria.otf);
+  font-weight: 400;
+  font-style: normal;
+}
+
+html {
+  height: 100%;
+}
+
+body {
+  width: 100%;
+  height: 100%;
+  margin: 0;
+  padding: 0;
+  font-family: "BebasNeueRegular", sans-serif;
+  font-weight: 400;
+  color: #fff;
+  font-size: 1.5rem;
+}
+
+.main {
+  height: 100%;
+}
+
+h1 {
+  font-family: "Evogria", sans-serif;
+  margin: 0;
+  font-size: 3rem;
+  margin-bottom: 71px;
+  margin-top: 1px;
+  margin-right: 1px;
+}
+
+h2 {
+  font-size: 2.1rem;
+  font-family: "BebasNeueThin", sans-serif;
+  font-stretch: condensed;
+  text-transform: uppercase;
+  margin: 0;
+  margin-bottom: 20px;
+  letter-spacing: 1.5px;
+  margin-left: 6px;
+}
+
+@media (max-width: 768px) {
+  h1 {
+    margin-left: 2px;
+  }
+  h2 {
+    font-size: 1.3rem;
+    margin-left: 1px;
+    margin-bottom: 7px;
+  }
+}
+
+.carousel-wrapper {
+  background: url(../../img/banner-icon.png), #e3608c;
+  width: 100%;
+  min-height: 100%;
+  background-repeat: no-repeat;
+  background-position: 5% 17%;
+  padding-top: 8%;
+  text-align: center;
+  padding-bottom: 170px;
+}
+
+.carousel-items {
+  position: relative;
+  max-width: 1110px;
+  height: 100%;
+  margin: 0 auto;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  padding: 0 10px;
+}
+
+.carousel-items:after {
+  content: "";
+  background: url(../../img/doska2.png);
+  width: 100%;
+  height: 21px;
+  position: absolute;
+  top: 56%;
+  left: 0;
+  display: block;
+}
+
+.carousel-items .carousel-item:nth-of-type(1) .container-info {
+  padding-left: 25px;
+}
+
+.ponneapple {
+  margin-left: 25px;
+}
+
+.container-tittle {
+  width: 240px;
+  background: -webkit-gradient(linear, left bottom, left top, from(#cc587f), color-stop(66%, rgba(0, 0, 0, 0)));
+  background: linear-gradient(0deg, #cc587f 0%, rgba(0, 0, 0, 0) 66%);
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  padding-bottom: 40px;
+}
+
+.mobile-wrapper {
+  width: 100%;
+}
+
+.carousel-selector {
+  display: none;
+}
+
+ul {
+  display: none;
+}
+
+.discount {
+  font-family: "BebasNeueThin", sans-serif;
+  color: #ffffff;
+  font-size: 1.4rem;
+  margin-top: 35px;
+  margin-bottom: 13px;
+  text-transform: uppercase;
+  letter-spacing: 0.3px;
+  word-spacing: 3px;
+}
+
+.price {
+  font-family: "BebasNeueLight", sans-serif;
+  font-size: 3.3rem;
+  text-transform: uppercase;
+  font-stretch: condensed;
+  margin: 0;
+  letter-spacing: -2px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+  margin-left: 16px;
+  margin-bottom: 25px;
+}
+
+sup {
+  font-size: 1.5rem;
+  font-weight: 400;
+  text-decoration: line-through;
+  text-transform: uppercase;
+  letter-spacing: 0;
+  font-family: "BebasNeueThin", sans-serif;
+  margin-top: 3px;
+  letter-spacing: 1px;
+}
+
+form {
+  position: relative;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: end;
+      -ms-flex-pack: end;
+          justify-content: flex-end;
+}
+
+.btn {
+  background: url(../../img/buy.png);
+  background-repeat: no-repeat;
+  background-size: auto;
+  background-position: center;
+  border-radius: 23px;
+  width: 65px;
+  height: 50px;
+  background-color: transparent;
+  border: 3px solid #fff;
+  padding: 12px 18px 9px;
+  cursor: pointer;
+}
+
+.container-info {
+  width: 180px;
+  margin: 0 auto;
+}
+
+.shopping-menu {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: end;
+      -ms-flex-pack: end;
+          justify-content: flex-end;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.icon {
+  background: url(../../img/arrow.png);
+  height: 7px;
+  width: 12px;
+  position: absolute;
+  right: 56%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+
+::-webkit-scrollbar {
+  width: 5px;
+}
+
+::-webkit-scrollbar-track {
+  -webkit-box-shadow: inset 0 0 6px rgba(0, 0, 0, 0.3);
+  border-radius: 10px;
+}
+
+::-webkit-scrollbar-thumb {
+  border-radius: 10px;
+  -webkit-box-shadow: inset 0 0 6px rgba(0, 0, 0, 0.5);
+}
+
+.input-wrapper {
+  position: relative;
+  font-size: 0.875rem;
+}
+
+.input-value {
+  font-family: "BebasNeueThin", sans-serif;
+  font-size: 1.3rem;
+  padding-bottom: 7px;
+  border: none;
+  background: none;
+  color: #fff;
+  outline: none;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  position: absolute;
+  left: 18%;
+  top: 10px;
+  width: 31%;
+  padding-left: 10px;
+  text-align: center;
+  border-bottom: 3px solid #fff;
+  cursor: pointer;
+}
+
+.input-value:focus + .input-array {
+  -webkit-transform: translatex(0);
+  transform: translatex(0);
+  opacity: 1;
+}
+
+.item {
+  display: block;
+  font-size: 1rem;
+}
+
+.background-item {
+  font-family: "BebasNeueThin", sans-serif;
+  font-size: 1.3rem;
+  padding: 4px 15px;
+  border-radius: 5px;
+}
+
+.background-item {
+  margin-bottom: 5px;
+}
+
+.background-item:hover {
+  background: #923e59;
+}
+
+.input-array {
+  position: absolute;
+  left: -10px;
+  top: 90%;
+  background-color: rgba(0, 0, 0, 0.2);
+  width: 70%;
+  max-height: 190px;
+  overflow: auto;
+  -webkit-transform: translatey(10px);
+  transform: translatey(10px);
+  opacity: 0;
+  -webkit-transition: 0.3s;
+  transition: 0.3s;
+  text-align: left;
+}
+
+.input-array:nth-of-type(1) .item {
+  padding-top: 10px;
+}
+
+.input-array > * {
+  cursor: pointer;
+  padding-left: 15px;
+  padding-bottom: 13px;
+}
+
+@media (max-width: 1200px) {
+  .carousel-items {
+    max-width: 90%;
+  }
+  .carousel-items .carousel-item:nth-of-type(1) .container-info {
+    padding-left: 0;
+  }
+  .container-tittle {
+    width: 23%;
+  }
+}
+
+@media (max-width: 992px) {
+  .container-info {
+    padding-left: 10px;
+    text-align: left;
+  }
+  .input-value {
+    left: 5%;
+  }
+  .icon {
+    right: 70%;
+  }
+  .mobile-wrapper img {
+    max-width: 80%;
+  }
+  .discount {
+    font-size: 1rem;
+  }
+  .price {
+    font-size: 2rem;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: start;
+        -ms-flex-pack: start;
+            justify-content: start;
+  }
+  sup {
+    font-size: 1rem;
+    margin-left: 10px;
+  }
+  .input-wrapper {
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+  }
+  .btn {
+    margin-left: 30%;
+  }
+}
+
+@media (max-width: 768px) {
+  .mobile-wrapper {
+    display: block;
+    margin: 0 auto;
+    height: 100%;
+    width: 240px;
+    position: relative;
+  }
+  .mobile-wrapper img {
+    max-width: 62%;
+    margin-left: 13px;
+  }
+  .mobile-wrapper .discount {
+    font-size: 1.4rem;
+    margin-top: 12px;
+    margin-bottom: 3px;
+    letter-spacing: 0.6px;
+    word-spacing: normal;
+  }
+  .mobile-wrapper .input-wrapper {
+    -webkit-box-pack: end;
+        -ms-flex-pack: end;
+            justify-content: flex-end;
+  }
+  .mobile-wrapper .price {
+    font-size: 3.3rem;
+    margin-bottom: 8px;
+  }
+  .mobile-wrapper sup {
+    font-size: 1.3rem;
+  }
+  .mobile-wrapper .container-info {
+    margin-right: 20px;
+  }
+  .mobile-wrapper .btn {
+    margin-right: 5px;
+  }
+  .mobile-wrapper .input-value {
+    left: 15%;
+    top: 12px;
+  }
+  .mobile-wrapper .icon {
+    right: 60%;
+  }
+  .mobile-wrapper::after {
+    content: "";
+    background: url(../../img/doska2.png);
+    width: 104%;
+    height: 21px;
+    position: absolute;
+    top: 32%;
+    left: -2%;
+    right: 0;
+    display: block;
+  }
+  .carousel-selector {
+    display: block;
+  }
+  .carousel-items,
+  .carousel-labels {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    display: block;
+  }
+  .carousel-item {
+    width: 240px;
+    display: block;
+    float: left;
+  }
+  .carousel-wrapper {
+    width: 100%;
+    height: 100%;
+    padding-top: 5%;
+    background-position: center;
+    position: relative;
+    overflow: hidden;
+  }
+  .carousel-items {
+    min-width: -webkit-max-content !important;
+    min-width: -moz-max-content !important;
+    min-width: max-content !important;
+    width: 400%;
+    height: 100%;
+    position: absolute;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    left: 0;
+    top: 94px;
+    z-index: 1;
+    transition: left 0.5s ease-out;
+    -o-transition: left 0.5s ease-out;
+    -ms-transition: left 0.5s ease-out;
+    -moz-transition: left 0.5s ease-out;
+    -webkit-transition: left 0.5s ease-out;
+  }
+  .carousel-items::after {
+    display: none;
+  }
+  .carousel-item {
+    width: 100vw;
+    height: 100%;
+    color: white;
+  }
+  .carousel-labels {
+    position: absolute;
+    z-index: 2;
+    left: 0;
+    bottom: 26%;
+    height: 20px;
+    width: 100%;
+    padding: 10px 0;
+    text-align: center;
+    background: transparent;
+  }
+  .carousel-selector {
+    display: none;
+  }
+  .carousel-label {
+    display: inline-block;
+  }
+  .carousel-label label {
+    width: 17px;
+    height: 10px;
+    border-radius: 15px;
+    border: 3px solid #fff;
+    display: block;
+    cursor: pointer;
+  }
+  #slide1:checked ~ .carousel-items {
+    left: 0;
+  }
+  #slide1:checked ~ .carousel-labels .carousel-label:nth-child(1) label {
+    background-color: white;
+  }
+  #slide2:checked ~ .carousel-items {
+    left: -100%;
+  }
+  #slide2:checked ~ .carousel-labels .carousel-label:nth-child(2) label {
+    background-color: white;
+  }
+  #slide3:checked ~ .carousel-items {
+    left: -200%;
+  }
+  #slide3:checked ~ .carousel-labels .carousel-label:nth-child(3) label {
+    background-color: white;
+  }
+  #slide4:checked ~ .carousel-items {
+    left: -300%;
+  }
+  #slide4:checked ~ .carousel-labels .carousel-label:nth-child(4) label {
+    background-color: white;
+  }
+}
+/*# sourceMappingURL=style.css.map */
