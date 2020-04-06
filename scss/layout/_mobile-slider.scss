@@ -47,7 +47,7 @@
       width: 104%;
       height: 21px;
       position: absolute;
-      top: 56%;
+      top: 55%;
       left: -2%;
       right: 0;
       display: block;
@@ -154,5 +154,13 @@
   }
   #slide4:checked ~ .carousel-labels .carousel-label:nth-child(4) label {
     background-color: white;
+  }
+}
+@media (max-width: 320px) {
+  .discount {
+    font-size: 1rem !important;
+  }
+  .price {
+    margin-left: 0 !important;
   }
 }

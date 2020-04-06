@@ -194,7 +194,7 @@ form {
 }
 
 .btn {
-  background: url(../../img/buy.png);
+  background: url(../img/buy.png);
   background-repeat: no-repeat;
   background-size: auto;
   background-position: center;
@@ -225,7 +225,7 @@ form {
 }
 
 .icon {
-  background: url(../../img/arrow.png);
+  background: url(../img/arrow.png);
   height: 7px;
   width: 12px;
   position: absolute;
@@ -441,7 +441,7 @@ form {
     width: 104%;
     height: 21px;
     position: absolute;
-    top: 56%;
+    top: 55%;
     left: -2%;
     right: 0;
     display: block;
@@ -549,6 +549,15 @@ form {
   }
   #slide4:checked ~ .carousel-labels .carousel-label:nth-child(4) label {
     background-color: white;
+  }
+}
+
+@media (max-width: 320px) {
+  .discount {
+    font-size: 1rem !important;
+  }
+  .price {
+    margin-left: 0 !important;
   }
 }
 /*# sourceMappingURL=style.css.map */
