@@ -163,6 +163,11 @@ form {
   cursor: pointer;
 }
 
+.input-value:active + .input-array {
+  -webkit-transform: translatex(0);
+  transform: translatex(0);
+  opacity: 1;
+}
 .input-value:focus + .input-array {
   -webkit-transform: translatex(0);
   transform: translatex(0);
@@ -194,7 +199,7 @@ form {
   overflow: auto;
   -webkit-transform: translatey(10px);
   transform: translatey(10px);
-  opacity: 1;
+  opacity: 0;
   transition: 0.3s;
   text-align: left;
   &:nth-of-type(1) {
