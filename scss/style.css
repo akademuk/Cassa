@@ -438,7 +438,7 @@ form {
     width: 104%;
     height: 21px;
     position: absolute;
-    top: 40%;
+    top: 41%;
     left: -2%;
     right: 0;
     display: block;
@@ -465,7 +465,7 @@ form {
     background-position: center;
     position: relative;
     overflow: hidden;
-    padding-bottom: 0;
+    padding-bottom: 50px;
   }
   .carousel-items {
     min-width: -webkit-max-content !important;
