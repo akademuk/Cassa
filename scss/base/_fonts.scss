@@ -1,31 +1,31 @@
 @font-face {
   font-family: "BebasNeueRegular";
-  src: url("BebasNeueRegular.woff") format("woff"),
-    url(../../fonts/BebasNeue/Regular.ttf) format("true-type"),
-    url(../../fonts/BebasNeue/Regular.otf);
+  src: url(../fonts/BebasNeue/BebasNeueRegular.woff) format("woff"),
+    url(../fonts/BebasNeue/Regular.ttf) format("true-type"),
+    url(../fonts/BebasNeue/Regular.otf);
   font-weight: 400;
   font-style: normal;
 }
 @font-face {
   font-family: "BebasNeueThin";
-  src: url("BebasNeue-Thin.woff") format("woff"),
-    url(../../fonts/BebasNeue/Thin.ttf) format("true-type"),
-    url(../../fonts/BebasNeueThin.otf);
+  src: url(../fonts/BebasNeue/BebasNeue-Thin.woff) format("woff"),
+    url(../fonts/BebasNeue/Thin.ttf) format("true-type"),
+    url(../fonts/BebasNeueThin.otf);
   font-weight: 100;
   font-style: normal;
 }
 @font-face {
   font-family: "BebasNeueLight";
-  src: url("BebasNeue-Light.woff") format("woff"),
-    url(../../fonts/BebasNeue/Light.ttf) format("true-type"),
-    url(../../fonts/BebasNeue/Light.otf);
+  src: url(../fonts/BebasNeue/BebasNeue-Light.woff) format("woff"),
+    url(../fonts/BebasNeue/Light.ttf) format("true-type"),
+    url(../fonts/BebasNeue/Light.otf);
   font-weight: 300;
   font-style: normal;
 }
 
 @font-face {
   font-family: "Evogria";
-  src: url(../../fonts/Evogria.otf);
+  src: url(../fonts/Evogria.otf);
   font-weight: 400;
   font-style: normal;
 }
