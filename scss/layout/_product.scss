@@ -194,7 +194,7 @@ form {
   overflow: auto;
   -webkit-transform: translatey(10px);
   transform: translatey(10px);
-  opacity: 0;
+  opacity: 1;
   transition: 0.3s;
   text-align: left;
   &:nth-of-type(1) {

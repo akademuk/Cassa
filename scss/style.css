@@ -313,7 +313,7 @@ form {
   overflow: auto;
   -webkit-transform: translatey(10px);
   transform: translatey(10px);
-  opacity: 0;
+  opacity: 1;
   -webkit-transition: 0.3s;
   transition: 0.3s;
   text-align: left;
@@ -388,7 +388,7 @@ form {
   }
 }
 
-@media (max-width: 768px) {
+@media (max-width: 576px) {
   .mobile-wrapper {
     display: block;
     margin: 0 auto;
