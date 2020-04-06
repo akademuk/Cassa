@@ -77,7 +77,7 @@ h2 {
 }
 
 .carousel-wrapper {
-  background: url(../../img/banner-icon.png), #e3608c;
+  background: url(../img/banner-icon.png), #e3608c;
   width: 100%;
   min-height: 100%;
   background-repeat: no-repeat;
@@ -137,17 +137,44 @@ h2 {
   width: 100%;
 }
 
-.carousel-selector {
-  display: none;
-}
-
+.carousel-selector,
 ul {
   display: none;
 }
 
+.btn {
+  background: url(../img/buy.png);
+  background-repeat: no-repeat;
+  background-size: auto;
+  background-position: center;
+  border-radius: 23px;
+  width: 65px;
+  height: 50px;
+  background-color: transparent;
+  border: 3px solid #fff;
+  padding: 12px 18px 9px;
+  cursor: pointer;
+}
+
+.container-info {
+  width: 180px;
+  margin: 0 auto;
+}
+
+.shopping-menu {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: end;
+      -ms-flex-pack: end;
+          justify-content: flex-end;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
 .discount {
   font-family: "BebasNeueThin", sans-serif;
-  color: #ffffff;
   font-size: 1.4rem;
   margin-top: 35px;
   margin-bottom: 13px;
@@ -183,47 +210,6 @@ sup {
   letter-spacing: 1px;
 }
 
-form {
-  position: relative;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-pack: end;
-      -ms-flex-pack: end;
-          justify-content: flex-end;
-}
-
-.btn {
-  background: url(../img/buy.png);
-  background-repeat: no-repeat;
-  background-size: auto;
-  background-position: center;
-  border-radius: 23px;
-  width: 65px;
-  height: 50px;
-  background-color: transparent;
-  border: 3px solid #fff;
-  padding: 12px 18px 9px;
-  cursor: pointer;
-}
-
-.container-info {
-  width: 180px;
-  margin: 0 auto;
-}
-
-.shopping-menu {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-pack: end;
-      -ms-flex-pack: end;
-          justify-content: flex-end;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-}
-
 .icon {
   background: url(../img/arrow.png);
   height: 7px;
@@ -237,18 +223,20 @@ form {
   background-repeat: no-repeat;
 }
 
-::-webkit-scrollbar {
+.input-array::-webkit-scrollbar {
   width: 5px;
 }
 
-::-webkit-scrollbar-track {
+.input-array::-webkit-scrollbar-track {
   -webkit-box-shadow: inset 0 0 6px rgba(0, 0, 0, 0.3);
+          box-shadow: inset 0 0 6px rgba(0, 0, 0, 0.3);
   border-radius: 10px;
 }
 
-::-webkit-scrollbar-thumb {
+.input-array::-webkit-scrollbar-thumb {
   border-radius: 10px;
   -webkit-box-shadow: inset 0 0 6px rgba(0, 0, 0, 0.5);
+          box-shadow: inset 0 0 6px rgba(0, 0, 0, 0.5);
 }
 
 .input-wrapper {
@@ -273,14 +261,12 @@ form {
   width: 31%;
   z-index: 3;
   padding-left: 10px;
-  text-align: center;
   border-bottom: 3px solid #fff;
   cursor: pointer;
 }
 
 .input-value:active + .input-array,
-.input-value:focus + .input-array,
-.input-value:hover + .input-array {
+.input-value:focus + .input-array {
   -webkit-transform: translatex(0);
   transform: translatex(0);
   opacity: 1;
@@ -345,6 +331,12 @@ form {
 }
 
 @media (max-width: 992px) {
+  .carousel-items:after {
+    top: 55%;
+    height: 30px;
+    background-repeat: no-repeat;
+    background-size: cover;
+  }
   .container-info {
     padding-left: 10px;
     text-align: left;
@@ -388,6 +380,38 @@ form {
   .input-array {
     max-height: 90px;
     z-index: 99;
+  }
+  .carousel-items:after {
+    top: 48%;
+  }
+  .discount {
+    font-size: 0.8rem;
+    margin-top: 15px;
+  }
+  .price {
+    margin-left: 0;
+  }
+  .input-wrapper {
+    -webkit-box-pack: end;
+        -ms-flex-pack: end;
+            justify-content: flex-end;
+    padding-right: 25px;
+  }
+  .input-value {
+    left: 0%;
+    width: 35%;
+  }
+  .btn {
+    width: 30px;
+    height: 30px;
+    margin-left: 0;
+    margin-top: 20px;
+  }
+  .carousel-items .carousel-item:nth-of-type(1) .container-info {
+    padding-left: 10px;
+  }
+  .container-info {
+    max-width: 100%;
   }
 }
 
@@ -502,14 +526,11 @@ form {
     height: 100%;
     color: white;
   }
-  .rel {
-    position: relative;
-  }
   .carousel-labels {
     position: relative;
     z-index: 2;
     left: 0;
-    margin-top: 550px;
+    margin-top: 505px;
     height: 70px;
     width: 100%;
     text-align: center;
