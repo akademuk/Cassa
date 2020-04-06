@@ -283,7 +283,7 @@ sup {
     margin-top: 15px;
   }
   .price {
-    margin-left: 0;
+    margin-left: 18px;
   }
   .input-wrapper {
     justify-content: flex-end;
@@ -292,13 +292,6 @@ sup {
   .input-value {
     left: 0%;
     width: 35%;
-  }
-
-  .btn {
-    width: 30px;
-    height: 30px;
-    margin-left: 0;
-    margin-top: 20px;
   }
   .carousel-items {
     .carousel-item {
@@ -313,11 +306,7 @@ sup {
     max-width: 100%;
   }
 }
-@media (max-width: 568px) {
-  .icon {
-    right: 53% !important;
-  }
-}
+
 @media (max-width: 320px) {
   .btn {
     background-size: 45% !important;

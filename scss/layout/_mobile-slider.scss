@@ -20,6 +20,7 @@
     }
     .input-wrapper {
       justify-content: flex-end;
+      padding-right: 0;
     }
     .price {
       font-size: 3.3rem;
@@ -108,7 +109,7 @@
     position: relative;
     z-index: 2;
     left: 0;
-    margin-top: 505px;
+    margin-top: 550px;
     height: 70px;
     width: 100%;
     text-align: center;
@@ -136,25 +137,25 @@
     background-color: white;
   }
   #slide2:checked ~ .carousel-items {
-    left: -100%;
+    left: -100vw;
   }
   #slide2:checked ~ .carousel-labels .carousel-label:nth-child(2) label {
     background-color: white;
   }
   #slide3:checked ~ .carousel-items {
-    left: -200%;
+    left: -200vw;
   }
   #slide3:checked ~ .carousel-labels .carousel-label:nth-child(3) label {
     background-color: white;
   }
   #slide4:checked ~ .carousel-items {
-    left: -300%;
+    left: -300vw;
   }
   #slide4:checked ~ .carousel-labels .carousel-label:nth-child(4) label {
     background-color: white;
   }
 }
-@media (max-width: 320px) {
+@media (max-width: 350px) {
   .discount {
     font-size: 1rem !important;
   }
