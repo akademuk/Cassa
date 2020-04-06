@@ -392,9 +392,12 @@ form {
   .mobile-wrapper {
     display: block;
     margin: 0 auto;
-    height: 100%;
+    height: auto;
     width: 240px;
     position: relative;
+    padding-bottom: 30px;
+    background: -webkit-gradient(linear, left bottom, left top, from(#cc587f), color-stop(66%, rgba(0, 0, 0, 0)));
+    background: linear-gradient(0deg, #cc587f 0%, rgba(0, 0, 0, 0) 66%);
   }
   .mobile-wrapper img {
     max-width: 62%;
@@ -438,7 +441,7 @@ form {
     width: 104%;
     height: 21px;
     position: absolute;
-    top: 41%;
+    top: 56%;
     left: -2%;
     right: 0;
     display: block;
@@ -457,22 +460,24 @@ form {
     width: 240px;
     display: block;
     float: left;
+    background: transparent;
+    padding-bottom: 0;
   }
   .carousel-wrapper {
     width: 100%;
-    height: 100%;
+    min-height: 100%;
     padding-top: 5%;
     background-position: center;
     position: relative;
-    overflow: hidden;
-    padding-bottom: 50px;
+    overflow-x: hidden;
+    padding-bottom: 0;
   }
   .carousel-items {
     min-width: -webkit-max-content !important;
     min-width: -moz-max-content !important;
     min-width: max-content !important;
     width: 400%;
-    height: 100%;
+    height: auto;
     position: absolute;
     display: -webkit-box;
     display: -ms-flexbox;
@@ -494,14 +499,16 @@ form {
     height: 100%;
     color: white;
   }
+  .rel {
+    position: relative;
+  }
   .carousel-labels {
-    position: absolute;
+    position: relative;
     z-index: 2;
     left: 0;
-    bottom: 7%;
-    height: 20px;
+    margin-top: 550px;
+    height: 70px;
     width: 100%;
-    padding: 10px 0;
     text-align: center;
     background: transparent;
   }
