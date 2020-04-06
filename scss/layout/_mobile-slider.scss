@@ -41,11 +41,11 @@
     }
     &::after {
       content: "";
-      background: url(../../img/doska2.png);
+      background: url(../img/doska-mobile.png);
       width: 104%;
       height: 21px;
       position: absolute;
-      top: 32%;
+      top: 40%;
       left: -2%;
       right: 0;
       display: block;
@@ -74,6 +74,7 @@
     background-position: center;
     position: relative;
     overflow: hidden;
+    padding-bottom: 0;
   }
   .carousel-items {
     min-width: max-content !important;
@@ -103,7 +104,7 @@
     position: absolute;
     z-index: 2;
     left: 0;
-    bottom: 26%;
+    bottom: 7%;
     height: 20px;
     width: 100%;
     padding: 10px 0;
@@ -117,7 +118,7 @@
     display: inline-block;
   }
   .carousel-label label {
-    width: 17px;
+    width: 15px;
     height: 10px;
     border-radius: 15px;
     border: 3px solid #fff;

@@ -258,3 +258,9 @@ form {
     margin-left: 30%;
   }
 }
+@media (max-width: 768px) {
+  .input-array {
+    max-height: 90px;
+    z-index: 99;
+  }
+}
